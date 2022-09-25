@@ -39,3 +39,38 @@ export const categories = [
     title: "SLIDERS",
   },
 ];
+
+export const popularProducts = [
+  {
+    id: 1,
+    img: "https://www.seekpng.com/png/full/69-693537_transparent-background-heel-transparent.png",
+  },
+  {
+    id: 2,
+    img: "https://www.seekpng.com/png/full/900-9008054_mens-leather-slipon-casual-shoe-red-tape-mens.png",
+  },
+  {
+    id: 3,
+    img: "https://www.seekpng.com/png/full/9-91088_football-boots-png-images-free-download-vector-royalty.png",
+  },
+  {
+    id: 4,
+    img: "https://www.seekpng.com/png/full/773-7736745_zoom-sneakers.png",
+  },
+  {
+    id: 5,
+    img: "https://www.seekpng.com/png/full/278-2787515_clothes-ugg-boots-hope-ladies-fashion-with-front.png",
+  },
+  {
+    id: 6,
+    img: "https://www.seekpng.com/png/full/70-705413_baabuk-wool-footwear-baabuk-unisex-sneaker-adult.png",
+  },
+  {
+    id: 7,
+    img: "https://www.seekpng.com/png/full/794-7943902_mens-leather-lace-up-casual-shoe-woodland-shoes.png",
+  },
+  {
+    id: 8,
+    img: "https://www.seekpng.com/png/full/763-7637817_leather-products-available-from-us-are-super-trendy.png",
+  },
+];
