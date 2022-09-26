@@ -63,8 +63,8 @@ const Icon = styled.div`
   cursor: pointer;
 
   &:hover {
-    background-color: #0091ff;
     transform: scale(1.5);
+    background-color: #${(props) => props.color};
   }
 `;
 
@@ -74,13 +74,13 @@ const Product = ({ item }) => {
       <Circle />
       <Image src={item.img} />
       <Info>
-        <Icon>
+        <Icon color="19CF41">
           <AddShoppingCartOutlined />
         </Icon>
-        <Icon>
+        <Icon color="0091FF">
           <SearchOutlined />
         </Icon>
-        <Icon>
+        <Icon color="FF00A6">
           <FavoriteBorderOutlined />
         </Icon>
       </Info>
