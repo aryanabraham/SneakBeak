@@ -38,7 +38,8 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  width: 15%;
+  width: 80px;
+  height: 35px;
   cursor: pointer;
   margin: 10px 0px;
 
