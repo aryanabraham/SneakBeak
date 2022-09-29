@@ -10,7 +10,7 @@ export const sliderItems = [
     id: 2,
     img: "https://images.pexels.com/photos/1797396/pexels-photo-1797396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "CONVERSE CRAZE",
-    desc: "CLEARANCE SALE ON ALL VINTAGE CHUCK TAYLOR'S",
+    desc: "CLEARANCE SALE ON ALL VINTAGE CHUCK TAYLORS",
     bg: "004d1a",
   },
   {
