@@ -43,7 +43,7 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
-  ${mobile({ width: "50px" })}
+  ${mobile({ width: "45px" })}
 `;
 
 const Center = styled.div`
@@ -63,9 +63,8 @@ const Right = styled.div`
   align-items: center;
   justify-content: flex-end;
   ${mobile({
-    flex: 2,
+    flex: 3,
     justifyContent: "flex-start",
-    marginLeft: "0px",
   })}
 `;
 
