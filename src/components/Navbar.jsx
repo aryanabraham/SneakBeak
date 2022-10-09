@@ -65,6 +65,7 @@ const Right = styled.div`
   ${mobile({
     flex: 2,
     justifyContent: "flex-start",
+    paddingLeft: "10px",
   })}
 `;
 
