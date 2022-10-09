@@ -63,7 +63,7 @@ const Right = styled.div`
   align-items: center;
   justify-content: flex-end;
   ${mobile({
-    flex: 3,
+    flex: 2,
     justifyContent: "flex-start",
   })}
 `;
