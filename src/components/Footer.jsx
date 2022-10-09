@@ -9,9 +9,11 @@ import {
 } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 const Left = styled.div`
@@ -47,6 +49,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: "none" })}
 `;
 
 const Title = styled.h3`
@@ -114,9 +117,9 @@ const Footer = () => {
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
-          <ListItem>Men's Fashion</ListItem>
-          <ListItem>Women's Fashion</ListItem>
-          <ListItem>Accessories</ListItem>
+          <ListItem>Men</ListItem>
+          <ListItem>Women</ListItem>
+          <ListItem>Unisex</ListItem>
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
           <ListItem>Wishlist</ListItem>
