@@ -1,6 +1,3 @@
-# E-Commerce-Website
-A fully-functional, responsive, MERN stack E-Commerce web application.
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
