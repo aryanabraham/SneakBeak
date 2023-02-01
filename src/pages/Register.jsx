@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
+import ShowAndHidePassword from "../components/PasswordShowHide";
 
 const Container = styled.div`
   width: 100vw;
@@ -64,14 +66,18 @@ const Register = () => {
           <Input placeholder="Last Name" />
           <Input placeholder="Username" />
           <Input placeholder="E-mail" />
-          <Input placeholder="Password" />
-          <Input placeholder="Confirm Password" />
+          <ShowAndHidePassword data="Password"/>
+          <ShowAndHidePassword data="Confirm Password"/>
           <Agreement>
             <br></br>
             By creating an account, I consent to the processing of my personal
             data in accordance with the <b>PRIVACY POLICY</b>
           </Agreement>
-          <Button>SUBMIT</Button>
+          <Link to="/">
+            <div >
+              <Button>SUBMIT</Button>
+            </div>
+          </Link>
         </Form>
       </Wrapper>
     </Container>
