@@ -1,6 +1,5 @@
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
-import img from "./img.png" 
 const  steps=[
     {  
       id: '1',
@@ -19,7 +18,7 @@ const  steps=[
     },
     {
       id: '4',
-      message :'Thank you for visiting SneakBeak',
+      message :'Thank you for visiting SneakBeak!',
       end:true,
     }
   ] ;
@@ -43,7 +42,7 @@ const Bot= function() {
 		<div >
 			<ThemeProvider theme={theme}>
 				<ChatBot  
-					headerTitle="EAa-comBot"
+					headerTitle="SneakBeakBot"
                     steps={steps}
 					{...config}
 				/>
