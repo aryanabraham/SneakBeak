@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
+import ProgressBar from "react-scroll-progress-bar";
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
