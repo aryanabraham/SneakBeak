@@ -7,6 +7,7 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
+import ProgressBar from "react-scroll-progress-bar";
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
