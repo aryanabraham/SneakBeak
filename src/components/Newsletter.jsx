@@ -1,6 +1,9 @@
-import { SendOutlined } from "@mui/icons-material";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import { Send } from '@material-ui/icons'
 import { mobile } from "../responsive";
+import emailjs from 'emailjs-com';
+import styled from 'styled-components';
+import './ImpCss.css'; 
 
 const Container = styled.div`
   height: 60vh;
@@ -48,6 +51,33 @@ const Button = styled.button`
 `;
 
 const Newsletter = () => {
+  const [isValid, setIsValid] = useState(false);
+  
+  const [message, setMessage] = useState('');
+  
+  const emailRegex = /\S+@\S+\.\S+/;
+
+  const validateEmail = (event) => {
+    const email = event.target.value;
+    if (emailRegex.test(email)) {
+      setIsValid(true);
+      setMessage('Thank you for registering!');
+    } else {
+      setIsValid(false);
+      setMessage('Please enter a valid email');
+    }
+  };
+
+  function sendEmail(e) {
+    e.preventDefault();   
+    console.log(process.env.REACT_APP_SERVICE_ID)
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target,process.env.REACT_APP_PUBLIC_API).then((result) => {
+          window.location.reload()  
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+  
   return (
     <Container>
       <Title>Newsletter</Title>
