@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import ShowAndHidePassword from "../components/PasswordShowHide";
 
 const Container = styled.div`
   width: 100vw;
@@ -66,7 +67,10 @@ const Login = () => {
         <Form>
           <Input placeholder="Username" />
           <Input placeholder="Password" />
+          <ShowAndHidePassword data="password"/>
+          <Linker to="/">
           <Button>LOG IN</Button>
+          </Linker>
           <Link>FORGOT PASSWORD?</Link>
           <Link>CREATE A NEW ACCOUNT</Link>
         </Form>
