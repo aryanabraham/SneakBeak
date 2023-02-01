@@ -42,6 +42,7 @@ const Option = styled.option``;
 const ProductList = () => {
   return (
     <Container>
+    <ProgressBar height="7px" duration="0.2"/>
       <Navbar />
       <Title>Products</Title>
       <FilterContainer>
