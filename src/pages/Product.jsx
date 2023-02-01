@@ -123,6 +123,7 @@ const Button = styled.button`
 const Product = () => {
   return (
     <Container>
+    <ProgressBar height="7px" duration="0.2"/>
       <Navbar />
       <Wrapper>
         <ImgContainer>
