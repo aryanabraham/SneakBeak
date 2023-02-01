@@ -7,6 +7,7 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { mobile } from "../responsive";
+import ProgressBar from "react-scroll-progress-bar";
 
 const Container = styled.div``;
 
@@ -162,6 +163,7 @@ const ProductPrice = styled.div`
 const Cart = () => {
   return (
     <Container>
+    <ProgressBar height="7px" duration="0.2"/>
       <Navbar />
       <Wrapper>
         <Title>YOUR BAG</Title>
